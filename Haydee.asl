@@ -4,7 +4,7 @@ state("launcher")
 	string32 LevelName: "game.dll", 0x05B34C, 0x6C;		// this string is changed only on new game start and when level has changed USING DOORS!!! save loads don`t affect this
 	byte mainMenuisOpen: "game.dll", 0x002F04, 0x8; 	// this byte switches 0<->1 if the main menu state is changed
 	byte newGameMenuisOpen: "game.dll", 0x003024, 0x8;	// this byte switches 0<->1 if the new game menu state is changed
-	byte loadMenuisOpen: "game.dll", 0x002DE4, 0x0;		// this byte switches 0<->1 if the load game menu state is changed
+	byte loadMenuisOpen: "game.dll", 0x002DE4, 0x8;		// this byte switches 0<->1 if the load game menu state is changed
 	byte gameIsRunning: "game.dll", 0x01F97C, 0x0;		// this byte switches 0<->1 if the game is "running" (game time can still stop/tick independently)
 }
 
